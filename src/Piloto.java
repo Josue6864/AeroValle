@@ -1,5 +1,7 @@
 package AeroValle.src;
 
+import java.util.Objects;
+
 public class Piloto {
     private String nombre;
     private String licencia;
@@ -63,15 +65,17 @@ public class Piloto {
 
     @Override
     public boolean equals(Object obj) {
+
         if (this == obj)
             return true;
+
         if (obj == null || getClass() != obj.getClass())
             return false;
 
-        Piloto piloto = (Piloto) obj;
+        Piloto pilotos = (Piloto) obj;
 
-        return nombre.equals(piloto.nombre)
-                && licencia.equals(piloto.licencia)
-                && horasVuelo == piloto.horasVuelo;
+        return Double.compare(horasVuelo, pilotos.horasVuelo) == 0
+                && Objects.equals(nombre, pilotos.nombre)
+                && Objects.equals(licencia, pilotos.licencia);
     }
 }
