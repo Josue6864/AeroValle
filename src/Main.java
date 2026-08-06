@@ -4,12 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("=== Pilotos ===");
 
         Piloto piloto1 = new Piloto("Ana Gomez", "ATP-2291", 5400);
 
         Piloto piloto2 = new Piloto("Luis Rivas", "PPL-1187");
         piloto2.setHorasVuelo(320);
 
+        System.out.println(piloto1);
+        System.out.println(piloto2);
 
         piloto1.setHorasVuelo(300, true);
 
@@ -20,11 +23,8 @@ public class Main {
 
         avion2.setCapacidad(4, true);
 
-
-        System.out.println(piloto1);
-        System.out.println(piloto2);
-
         System.out.println();
+        System.out.println("=== Aviones ===");
 
         System.out.println(avion1);
         System.out.println(avion2);

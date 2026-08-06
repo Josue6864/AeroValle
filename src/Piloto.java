@@ -56,11 +56,9 @@ public class Piloto {
 
     @Override
     public String toString() {
-        return "Piloto{" +
-                "nombre='" + nombre + '\'' +
-                ", licencia='" + licencia + '\'' +
-                ", horasVuelo=" + horasVuelo +
-                '}';
+        return "Piloto: " + nombre +
+                " | Licencia: " + licencia +
+                " | Horas: " + horasVuelo;
     }
 
     @Override
